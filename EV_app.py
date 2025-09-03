@@ -17,7 +17,7 @@ server = app.server
 # Data
 # ---------------------------------
 df = pd.read_csv(
-    "C:\\Users\\Ashish Siwach\\OneDrive - University of Exeter\\Dissertation_Cld\\Datasets\\enhanced_imputed_dataset.csv",
+    "enhanced_imputed_dataset.csv",
     parse_dates=['date'],
     index_col='date'
 )
@@ -640,4 +640,5 @@ app.index_string = '''
 # ---------------------------------
 if __name__ == '__main__':
     app.run_server(debug=True)
+
 

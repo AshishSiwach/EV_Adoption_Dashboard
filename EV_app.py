@@ -11,6 +11,7 @@ warnings.filterwarnings('ignore')
 # App
 # ---------------------------------
 app = dash.Dash(__name__)
+server = app.server
 
 # ---------------------------------
 # Data
@@ -639,3 +640,4 @@ app.index_string = '''
 # ---------------------------------
 if __name__ == '__main__':
     app.run_server(debug=True)
+
